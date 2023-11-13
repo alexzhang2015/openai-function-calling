@@ -6,10 +6,6 @@ from dotenv import dotenv_values
 env = dotenv_values()
 client = OpenAI(api_key=env['OPENAI_API_KEY'])
 
-# Example dummy function hard coded to return the same weather
-# In production, this could be your backend API or an external API
-
-
 params = {
     "key": env['AMAP_API_KEY'],
     "output": "json",
